@@ -75,11 +75,18 @@ public class LoginView extends JPanel {
 					
 					
 					//if user information is right 
-					if(confirm && access )JOptionPane.showMessageDialog(null,"User Logged in Successfully !!!");
+					if(confirm && access ) {
+						JOptionPane.showMessageDialog(null,"User Logged in Successfully !!!");
+						new LandingPage();
+						
+					}						
+						
 						
 					
 					//if user information is wrong			
-					else JOptionPane.showMessageDialog(null,"UserName & Password doesn't match as expected !!!");
+					else {
+						JOptionPane.showMessageDialog(null,"UserName & Password doesn't match as expected !!!");
+					} 
 					
 				}
 			
